@@ -1,11 +1,24 @@
 :root {
   --main-color: #e8edf4;
+  --secondary-color: #6749d0;
+  --clr-theme-color: #7153d9;
+  --clr-theme-color-2: #4526b1;
+  --clr-theme-color-3: #5435be;
 }
 body {
   background-color: var(--main-color);
   font-family: "Jost", sans-serif;
 }
 /* Start Nav */
+.bg-nav1 {
+  background: var(--main-color) !important;
+  /* transition: 1.5s ease-in; */
+}
+
+.bg-nav1.scrolled {
+  background: #fff !important;
+}
+
 .navbar {
   background-color: var(--main-color);
 }
@@ -15,7 +28,40 @@ body {
   color: black;
 }
 .navbar .navbar-nav .nav-item:hover .nav-link {
-  color: #6749d0;
+  color: var(--secondary-color);
 }
 
 /* End Nav */
+/* Start section */
+.main-subtitle {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+.main-title {
+  font-size: 72px;
+  font-weight: 500;
+  color: #1c1c1c;
+}
+.main-pargraph {
+  font-size: 24px;
+  font-weight: 400;
+  color: #54545f;
+}
+.main-btn {
+  background: linear-gradient(
+    135deg,
+    var(--clr-theme-color-2) 0%,
+    var(--clr-theme-color-3) 45%,
+    var(--clr-theme-color) 66%
+  );
+  padding: 16px 38px;
+  border-radius: 27px;
+  color: #fff;
+}
+/* End section */
+/* Start sloution section */
+
+.container .sloution {
+  background-color: #fff;
+}
+/* End sloution section */

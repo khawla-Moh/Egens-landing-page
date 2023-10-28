@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container py-4">
-      <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container py-5">
+      <nav
+        id="#nav"
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-nav1 p-4 mb-5"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Egens</a>
           <button
@@ -58,8 +61,52 @@
         </div>
       </nav>
     </div>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 text-capitalize">
+          <h4 class="main-subtitle text-uppercase">We Are Egens</h4>
+          <h1 class="main-title py-3">we design solutions for business</h1>
+          <p class="main-pargraph pe-3 pb-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore,
+            exerc.
+          </p>
+          <a href="#" class="btn main-btn">read more</a>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <img src="images/img1.png" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
 
+    <div class="container sloution">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="sloution-img">
+            <img src="images/icon-14.png" alt="" srcset="" />
+          </div>
+          <div class="sloution-content">
+            <h6>Creative Strategy</h6>
+            <p>
+              Sed do eiusmod tempor incidiunt ation ullamco laboris nisi ut
+              aloniq uip ex ea com consequat
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6"></div>
+      </div>
+    </div>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(window).scroll(function () {
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 200);
+      });
+    </script>
   </body>
 </html>
