@@ -6,16 +6,19 @@
   --clr-theme-color-3: #5435be;
 }
 body {
-  background-color: var(--main-color);
   font-family: "Jost", sans-serif;
 }
+.mainbackground {
+  background-color: var(--main-color);
+}
 /* Start Nav */
-.bg-nav1 {
+
+.background-nav {
   background: var(--main-color) !important;
   /* transition: 1.5s ease-in; */
 }
 
-.bg-nav1.scrolled {
+.background-nav.scrolled {
   background: #fff !important;
 }
 
@@ -61,7 +64,15 @@ body {
 /* End section */
 /* Start sloution section */
 
-.container .sloution {
-  background-color: #fff;
+.feature-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f2f5fb;
+}
+.P-icon {
+  color: #1c1c1c;
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 /* End sloution section */
