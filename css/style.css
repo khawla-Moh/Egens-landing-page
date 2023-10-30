@@ -4,6 +4,7 @@
   --clr-theme-color: #7153d9;
   --clr-theme-color-2: #4526b1;
   --clr-theme-color-3: #5435be;
+  --pargraph-color: #54545f;
 }
 body {
   font-family: "Jost", sans-serif;
@@ -48,7 +49,7 @@ body {
 .main-pargraph {
   font-size: 24px;
   font-weight: 400;
-  color: #54545f;
+  color: var(--pargraph-color);
 }
 .main-btn {
   background: linear-gradient(
@@ -76,3 +77,49 @@ body {
   letter-spacing: 1px;
 }
 /* End sloution section */
+
+/* Start Services */
+.services {
+  background-color: #fdfdfd;
+}
+.header-5 {
+  font-size: 20px;
+  color: var(--secondary-color);
+  letter-spacing: 9px;
+}
+.header-2 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.16;
+  color: #1c1c1c;
+}
+.p-services {
+  color: #8d8e99;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.p-service {
+  font-size: 18px;
+}
+.mycard {
+  box-shadow: 0px 12px 42px rgba(69, 38, 177, 0.1),
+    11px 6px 25px rgba(69, 38, 177, 0.1);
+  border-radius: 20px;
+}
+.mycard a {
+  color: #1c1c1c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.mycard a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  margin-left: 10px;
+}
+/* End Services */
