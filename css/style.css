@@ -22,10 +22,13 @@ body {
 .background-nav.scrolled {
   background: #fff !important;
 }
-
-.navbar {
+.navbar-brand {
+  color: var(--secondary-color);
+}
+/* .navbar {
   background-color: var(--main-color);
 }
+ */
 .navbar .navbar-nav .nav-link {
   font-size: 18px;
   font-weight: 500;
