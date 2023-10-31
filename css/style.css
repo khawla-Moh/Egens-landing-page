@@ -25,10 +25,6 @@ body {
 .navbar-brand {
   color: var(--secondary-color);
 }
-/* .navbar {
-  background-color: var(--main-color);
-}
- */
 .navbar .navbar-nav .nav-link {
   font-size: 18px;
   font-weight: 500;
@@ -36,6 +32,10 @@ body {
 }
 .navbar .navbar-nav .nav-item:hover .nav-link {
   color: var(--secondary-color);
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/toggler.png);
 }
 
 /* End Nav */
@@ -126,3 +126,58 @@ body {
   margin-left: 10px;
 }
 /* End Services */
+
+/* Media Query  */
+
+/* mobile */
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 36px;
+  }
+  .main-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+  .main-image {
+    margin-top: 33px;
+  }
+  .main-pargraph {
+    font-size: 20px;
+  }
+  .main-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .feature-i {
+    margin: 20px 0px;
+  }
+  .img2 {
+    margin-top: 25px;
+  }
+  .header-2 {
+    font-size: 30px;
+  }
+  .header-5 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 5px;
+  }
+
+  .p-services {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .services-c {
+    padding: 0px 14px !important;
+  }
+}
+/* tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .main-title {
+    font-size: 50px;
+  }
+}
+/* large */
+@media (min-width: 992px) {
+}
